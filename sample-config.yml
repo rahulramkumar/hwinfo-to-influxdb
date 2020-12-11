@@ -1,0 +1,13 @@
+# HWiNFO configuration
+hwinfo_config:
+  connection_string: "http://localhost:8080" # default Remote Sensor Monitor URL
+  refresh_interval: 2 # seconds
+
+# InfluxDB configuration
+influxdb_config:
+  connection_string: "http://put.your.influxdb.host.here.jpeg:8086"
+  org: # can leave blank for influxdb <2.0
+  bucket: "foobucket" # change to your bucket name
+  username: "your influxdb username"
+  shared_secret_env: "INFLUX_SHARED_SECRET" # the environment variable that contains the JWT shared secret for auth
+
