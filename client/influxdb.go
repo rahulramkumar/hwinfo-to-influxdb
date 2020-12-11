@@ -111,7 +111,7 @@ func createInfluxDBPoint(reading *HWinfoSensorReading) (influxDBWritePoint *writ
 			"sensor_name": reading.Name,
 		},
 		map[string]interface{}{
-			"sensor_value": reading.Value,
+			"value": reading.Value,
 		},
 		reading.GoTime,
 	)

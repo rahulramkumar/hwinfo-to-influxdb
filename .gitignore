@@ -2,3 +2,5 @@
 config.yml
 vendor/
 log.txt
+*.ps1
+*.exe

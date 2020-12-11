@@ -9,12 +9,12 @@ import (
 )
 
 type HWinfoSensorReading struct {
-	App        string `json:"SensorApp"`
-	Class      string `json:"SensorClass"`
-	Name       string `json:"SensorName"`
-	Value      string `json:"SensorValue"`
-	Unit       string `json:"SensorUnit"`
-	UpdateTime int64  `json:"SensorUpdateTime"`
+	App        string  `json:"SensorApp"`
+	Class      string  `json:"SensorClass"`
+	Name       string  `json:"SensorName"`
+	Value      float64 `json:"SensorValue,string"`
+	Unit       string  `json:"SensorUnit"`
+	UpdateTime int64   `json:"SensorUpdateTime"`
 	GoTime     time.Time
 }
 
